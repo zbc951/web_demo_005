@@ -1,0 +1,236 @@
+.mainWrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    .ad {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin:  0 auto;
+        position: relative;
+        z-index: 10;
+
+        &.swiper {
+            .swiper-wrapper {
+                height: auto;
+                .swiper-slide {
+                    height: auto !important;
+                    font-size: 0;
+
+                    img {
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+
+        
+    }
+    .mq {
+        width: 100%;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $mqBG;
+
+        .mqBox {
+            width: 100%;
+            max-width: 1400px;
+            min-width: 900px;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            background: $textBoxBG;
+            border-radius: 5px;
+            padding: 2px;
+
+            .title {
+                width: 10%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                position: relative;
+                z-index: 10;
+    
+                p {
+                    color: $subFont;
+                    font-size: 20px;
+                    font-weight: bold;
+                    white-space: nowrap;
+                }
+            }
+    
+            .textBox {
+                width: 100%;
+                height: 90%;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+               
+                .content {
+                    color: $mqTitle;
+                    font-size: 20px;
+                    font-weight: bold;
+                    white-space: nowrap;
+                    padding-left: 80px;
+                    animation: mqText 6s linear infinite;
+
+                    @keyframes mqText {
+                        0% {
+                            transform: translateX(300%);
+                        }
+                        100% {
+                            transform: translateX(-150%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .gameType {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5.5rem 0 3rem;
+
+        .content {
+            width: 100%;
+            max-width: 1400px;
+            height: 605px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px 30px;
+
+            .gameBlock {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+
+                .contentBox {
+                    width: 100%;
+                    height: 75%;
+                    @include cont_BG_Blue;
+                    border-radius: 9px;
+                    border: 3px solid #ffffff;
+                    position: relative;
+                    cursor: pointer;
+                    
+                    .mainObj {
+                        width: 100%;
+                        height: 0;
+                        position: absolute;
+                        bottom: 50px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        transition: 0.3s all;
+                        z-index: 5;
+
+                        &.abc {
+                            width: 81%;
+                            padding-top: 79%;
+                            bottom: 49px;
+                        }
+                        &.aa {
+                            width: 112%;
+                            padding-top: 68%;
+                            bottom: 84px;
+                        }
+                        &.cc {
+                            width: 115%;
+                            padding-top: 76%;
+                        }
+                        &.sss {
+                            width: 113%;
+                            padding-top: 76%;
+                            bottom: 30px;
+                            left: 60%;
+                        }
+                        &.ppp {
+                            padding-top: 77%;
+                            bottom: 40px;
+                        }
+                        &.fish {
+                            padding-top: 71%;
+                            bottom: 8px;
+                        }
+                        &.bb {
+                            padding-top: 76%;
+                        }
+                        &.card {
+                            padding-top: 70%;
+                            bottom: 65px;
+                        }
+                    }
+                    
+                    .gnameBox {
+                        width: 110%;
+                        height: 0;
+                        padding-top: 40%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        bottom: -11px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: 10;
+
+                        p {
+                            color: $mainFont;
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
+                    }
+
+                    &:hover,&:active,&.active {
+                        .mainObj {
+                            animation: HOV 1s 0.3s ease-in-out;
+
+                            @keyframes HOV {
+                                0% {
+                                    transform: skew(0deg, 0deg) translate(-50%);
+                                }
+                                100% {
+                                    transform: skew(3deg, 2deg) translate(-50%);
+                                }
+                            }
+                        }
+
+                        .gnameBox {
+                            filter: brightness(1.1);
+                        }
+                    }
+                }
+
+                &:nth-of-type(2),
+                &:nth-of-type(4),
+                &:nth-of-type(5),
+                &:nth-of-type(7){
+                    .contentBox {
+                        @include cont_BG_Pink;
+                    }
+                }
+                
+                &:nth-of-type(even){
+                    transform: translateY(-15%);
+                }
+            }
+        }
+    }
+}

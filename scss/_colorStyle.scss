@@ -1,0 +1,140 @@
+//fontColor
+$mainFont: #000000;
+$subFont: #ffffff;
+$headerNav_font: #ffe280;
+$footerFont: #a9a9a9;
+$gameType_Font: #6e2222;
+$gameNAME: #ffea96;
+$remind: #37adff;
+
+//border
+$border_01: #7c7c7c;
+$border_02: #404040;
+$border_03: #ffffff;
+
+//header
+$logoBG: #7b0303;
+$logoHOV_shadow: #ffffff79;
+$labelDecoBG: linear-gradient(to bottom, #c99f55 0%, #ebc980 100%);
+$lang_arrow: #a38b61;
+$nav_ACT: linear-gradient(to top, #ee514c 0%, #120638 100%);
+
+@mixin headerInput {
+    background: #e0e0e0;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@mixin lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+
+    &:hover,&:active,&.active {
+        background: #c19548;
+        border-color: #f5f5f5;
+        p {
+            span {
+                &::before,
+                &::after {
+                    background: #f5f5f5;
+                }
+            }
+        }
+    }
+}
+
+//mq
+$mqTitle: #000000;
+$mqBG: linear-gradient(to right, #ef534e 0%, #d8231e 100%);
+$textBoxBG: #f7f7f7;
+$mqShadaw: #00000079;
+
+//mainWrap
+$gnameDeco01: #f9746f;
+$gnameDeco02: #d581e2;
+
+@mixin cont_BG_Blue {
+    background: linear-gradient(to top, #0476cd 0%, #02def2 100%);
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom, #0476cd 0%, #02def2 100%);
+    }
+}
+
+@mixin cont_BG_Pink {
+    background: linear-gradient(to top, #96124d 0%, #ff5e88 100%);
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom, #96124d 0%, #ff5e88 100%);
+    }
+}
+
+//footer
+$fnav_bg: $mqBG;
+$gcBTN_BG: #bcbcbc;
+$gcBTN_HOV_BG: #ffffff;
+$midTitle_deco: #c8a364;
+$footerNav_BG: linear-gradient(to left, transparent 0%, #0f0f0f 50%, transparent 100%);
+$footerNavHOV_BG: linear-gradient(to left, transparent 0%, #a27d3e 50%, transparent 100%);
+
+@mixin footer_ACT {
+    background: linear-gradient(45deg,#ffa718 25%,#ff9312 0,#ff9312 50%,
+                 #ffa718 0,#ffa718 75%,#ff9312 0);
+    background-size: 42px 42px ;
+}
+
+//常用BTN
+
+@mixin mainBtn {
+    background: #ffbc0c;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #0b313b;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #bb8947;
+        border-color: #f5f5f5;
+        color: #ffffff;
+    }
+}
+
+@mixin subBtn {
+    background: #e33a35;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #7e0404;
+        border-color: #f5f5f5;
+        color: #ffffff;
+    }
+}
+
+@mixin blackGold_Btn {
+    background: linear-gradient(to top, #141414 0%, #1e1e1e 100%);
+    border: 1px solid #f8e191;
+    color: #e9bd71;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #c19548;
+        border: 2px solid #f5f5f5;
+        color: #ffffff;
+    }
+}
+
+//bg_Obj
+$circle_gold: #d3ab62;
+$circle_gray: #6f6f6f;

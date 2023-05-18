@@ -1,0 +1,34 @@
+html {
+    width: 100%;
+    min-width: 1000px;
+    height: 100%;
+    font-size: 1.5vh;
+    position: relative;
+
+    body {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        // &::-webkit-scrollbar {
+        //     width: 0;
+        // }
+
+    
+        // .bg {
+        //     width: 100%;
+        //     height: 100%;
+        //     overflow: hidden;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     z-index: -999;
+        // }
+    }
+
+    @import "./_header";
+    @import "./_mainWrap";
+    @import "./_footer";
+}

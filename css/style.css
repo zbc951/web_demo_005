@@ -1,0 +1,916 @@
+@charset "UTF-8";
+header {
+  background: url(../img/headerBG.png) no-repeat center;
+  background-size: cover;
+}
+
+.mq .mqBox .title {
+  background: url(../img/mqBg.png) no-repeat center;
+  background-size: cover;
+}
+
+.gameType {
+  background: url(../img/bg.png) no-repeat center;
+  background-size: cover;
+}
+
+.mainObj.abc {
+  background: url(../img/entrance/abc.png) no-repeat center;
+  background-size: 100%;
+}
+
+.mainObj.aa {
+  background: url(../img/entrance/aa.png) no-repeat center;
+  background-size: 100%;
+}
+
+.mainObj.cc {
+  background: url(../img/entrance/cc.png) no-repeat center;
+  background-size: 100%;
+}
+
+.mainObj.sss {
+  background: url(../img/entrance/sss.png) no-repeat center;
+  background-size: 100%;
+}
+
+.mainObj.ppp {
+  background: url(../img/entrance/pp.png) no-repeat center;
+  background-size: 100%;
+}
+
+.mainObj.fish {
+  background: url(../img/entrance/fich.png) no-repeat center;
+  background-size: 100%;
+}
+
+.mainObj.bb {
+  background: url(../img/entrance/bb.png) no-repeat center;
+  background-size: 100%;
+}
+
+.mainObj.card {
+  background: url(../img/entrance/card.png) no-repeat center;
+  background-size: 100%;
+}
+
+.contentBox .gnameBox {
+  background: url(../img/yellowPink.png) no-repeat center;
+  background-size: 100%;
+}
+
+.gameBlock:nth-of-type(2) .gnameBox,
+.gameBlock:nth-of-type(4) .gnameBox,
+.gameBlock:nth-of-type(5) .gnameBox,
+.gameBlock:nth-of-type(7) .gnameBox {
+  background: url(../img/bluePurple.png) no-repeat center;
+  background-size: 100%;
+}
+
+footer .bottom {
+  background: url(../img/footerBG.png) no-repeat center;
+  background-size: cover;
+}
+
+footer li:hover a,
+footer li:active a,
+footer li.active a {
+  background: url(../img/footer_HOV.png) no-repeat center;
+  background-size: 200%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+main {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  width: 100%;
+  min-width: 1000px;
+  height: 100%;
+  font-size: 1.5vh;
+  position: relative;
+}
+html body {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html header {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+html header .center {
+  max-width: 1400px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html header .center .logoArea {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html header .center .logoArea .logo {
+  width: 133px;
+  height: 36px;
+  margin: auto;
+  cursor: pointer;
+}
+html header .center .logoArea .logo:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+html header .center .right {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html header .center .right .top {
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html header .center .right .top .logIN_Area {
+  width: auto;
+  height: 100%;
+}
+html header .center .right .top .logIN_Area form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 12px;
+}
+html header .center .right .top .logIN_Area form label {
+  margin-right: 12px;
+  position: relative;
+}
+html header .center .right .top .logIN_Area form label input {
+  max-width: 188px;
+  min-width: 141px;
+  height: 28px;
+  padding: 0 1rem;
+  background: #e0e0e0;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html header .center .right .top .logIN_Area form button {
+  width: auto;
+  height: 28px;
+  white-space: nowrap;
+  padding: 0 0.5rem;
+  margin-right: 12px;
+}
+html header .center .right .top .logIN_Area form button.login {
+  background: #ffbc0c;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #0b313b;
+  font-size: 16px;
+  font-weight: bold;
+}
+html header .center .right .top .logIN_Area form button.login:hover, html header .center .right .top .logIN_Area form button.login:active, html header .center .right .top .logIN_Area form button.login.active {
+  background: #bb8947;
+  border-color: #f5f5f5;
+  color: #ffffff;
+}
+html header .center .right .top .logIN_Area form button.signup {
+  background: #e33a35;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 0;
+}
+html header .center .right .top .logIN_Area form button.signup:hover, html header .center .right .top .logIN_Area form button.signup:active, html header .center .right .top .logIN_Area form button.signup.active {
+  background: #7e0404;
+  border-color: #f5f5f5;
+  color: #ffffff;
+}
+html header .center .right .top a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+html header .center .right .top a .q_icon {
+  width: 19px;
+  height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 13px;
+  margin-right: 0.5rem;
+}
+html header .center .right .top a p {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+html header .center .right .top .lang {
+  width: auto;
+  height: 80%;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  margin-left: 12px;
+  cursor: pointer;
+}
+html header .center .right .top .lang:hover, html header .center .right .top .lang:active, html header .center .right .top .lang.active {
+  background: #c19548;
+  border-color: #f5f5f5;
+}
+html header .center .right .top .lang:hover p span::before, html header .center .right .top .lang:hover p span::after, html header .center .right .top .lang:active p span::before, html header .center .right .top .lang:active p span::after, html header .center .right .top .lang.active p span::before, html header .center .right .top .lang.active p span::after {
+  background: #f5f5f5;
+}
+html header .center .right .top .lang p {
+  white-space: nowrap;
+  margin: 0 10px;
+}
+html header .center .right .top .lang p span {
+  margin-left: 30px;
+  position: relative;
+}
+html header .center .right .top .lang p span::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 6px;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media only screen and (max-width: 1120px) {
+  html header .center .right .top .center input {
+    width: 5%;
+  }
+}
+html header .center .right .bottom {
+  width: 100%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 258px;
+}
+html header .center .right .bottom li {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  position: relative;
+  cursor: pointer;
+}
+html header .center .right .bottom li p {
+  color: #ffe280;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin: 0 22px;
+  position: relative;
+}
+html header .center .right .bottom li:hover, html header .center .right .bottom li:active, html header .center .right .bottom li.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ee514c), to(#120638));
+  background: linear-gradient(to top, #ee514c 0%, #120638 100%);
+}
+html header .center .right .bottom li:hover p, html header .center .right .bottom li:active p, html header .center .right .bottom li.active p {
+  color: #ffffff;
+}
+@media only screen and (max-width: 1600px) {
+  html header .center .right .bottom .center li p {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 1692px) {
+  html header .center .right .bottom li p {
+    font-size: 17.5px;
+  }
+}
+@media only screen and (max-width: 1666px) {
+  html header .center .right .bottom li p {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  html header .center .right .bottom li p {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+}
+@media only screen and (max-width: 1314px) {
+  html header .bottom .center li p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1266px) {
+  html header .bottom .center li p {
+    margin: 0 20px;
+  }
+}
+@media only screen and (max-width: 1223px) {
+  html header .bottom .center li p {
+    margin: 0 15px;
+  }
+}
+@media only screen and (max-width: 1125px) {
+  html header .bottom .center li p {
+    margin: 0 10px;
+  }
+}
+@media only screen and (max-width: 1045px) {
+  html header .top {
+    padding-left: 22%;
+  }
+  html header .bottom .center li p {
+    margin: 0 10px;
+  }
+}
+@media only screen and (max-width: 1008px) {
+  html header .top {
+    padding-left: 22%;
+  }
+  html header .top .center .logIN_Area form button {
+    width: 98px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  html header .logoArea {
+    left: -206px;
+  }
+  html header .logoArea .logo {
+    left: 228px;
+  }
+  html header .top {
+    padding-left: 235px;
+  }
+  html header .top .center {
+    padding: 0 8px;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  html header .top .center .logIN_Area {
+    width: 68%;
+  }
+  html header .bottom {
+    height: 65px;
+    padding-left: 219px;
+  }
+  html header .bottom .center {
+    font-size: 14px;
+    padding: 0;
+  }
+  html header .bottom .center li p {
+    margin: 0 6px;
+  }
+}
+html .mainWrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html .mainWrap .ad {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+html .mainWrap .ad.swiper .swiper-wrapper {
+  height: auto;
+}
+html .mainWrap .ad.swiper .swiper-wrapper .swiper-slide {
+  height: auto !important;
+  font-size: 0;
+}
+html .mainWrap .ad.swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html .mainWrap .mq {
+  width: 100%;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, right top, from(#ef534e), to(#d8231e));
+  background: linear-gradient(to right, #ef534e 0%, #d8231e 100%);
+}
+html .mainWrap .mq .mqBox {
+  width: 100%;
+  max-width: 1400px;
+  min-width: 900px;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f7f7f7;
+  border-radius: 5px;
+  padding: 2px;
+}
+html .mainWrap .mq .mqBox .title {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  position: relative;
+  z-index: 10;
+}
+html .mainWrap .mq .mqBox .title p {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+html .mainWrap .mq .mqBox .textBox {
+  width: 100%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+html .mainWrap .mq .mqBox .textBox .content {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  padding-left: 80px;
+  -webkit-animation: mqText 6s linear infinite;
+          animation: mqText 6s linear infinite;
+}
+@-webkit-keyframes mqText {
+  0% {
+    -webkit-transform: translateX(300%);
+            transform: translateX(300%);
+  }
+  100% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+}
+@keyframes mqText {
+  0% {
+    -webkit-transform: translateX(300%);
+            transform: translateX(300%);
+  }
+  100% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+}
+html .mainWrap .gameType {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5.5rem 0 3rem;
+}
+html .mainWrap .gameType .content {
+  width: 100%;
+  max-width: 1400px;
+  height: 605px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 30px;
+}
+html .mainWrap .gameType .content .gameBlock {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+html .mainWrap .gameType .content .gameBlock .contentBox {
+  width: 100%;
+  height: 75%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0476cd), to(#02def2));
+  background: linear-gradient(to top, #0476cd 0%, #02def2 100%);
+  border-radius: 9px;
+  border: 3px solid #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+html .mainWrap .gameType .content .gameBlock .contentBox:hover, html .mainWrap .gameType .content .gameBlock .contentBox:active, html .mainWrap .gameType .content .gameBlock .contentBox.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0476cd), to(#02def2));
+  background: linear-gradient(to bottom, #0476cd 0%, #02def2 100%);
+}
+html .mainWrap .gameType .content .gameBlock .contentBox .mainObj {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  z-index: 5;
+}
+html .mainWrap .gameType .content .gameBlock .contentBox .mainObj.abc {
+  width: 81%;
+  padding-top: 79%;
+  bottom: 49px;
+}
+html .mainWrap .gameType .content .gameBlock .contentBox .mainObj.aa {
+  width: 112%;
+  padding-top: 68%;
+  bottom: 84px;
+}
+html .mainWrap .gameType .content .gameBlock .contentBox .mainObj.cc {
+  width: 115%;
+  padding-top: 76%;
+}
+html .mainWrap .gameType .content .gameBlock .contentBox .mainObj.sss {
+  width: 113%;
+  padding-top: 76%;
+  bottom: 30px;
+  left: 60%;
+}
+html .mainWrap .gameType .content .gameBlock .contentBox .mainObj.ppp {
+  padding-top: 77%;
+  bottom: 40px;
+}
+html .mainWrap .gameType .content .gameBlock .contentBox .mainObj.fish {
+  padding-top: 71%;
+  bottom: 8px;
+}
+html .mainWrap .gameType .content .gameBlock .contentBox .mainObj.bb {
+  padding-top: 76%;
+}
+html .mainWrap .gameType .content .gameBlock .contentBox .mainObj.card {
+  padding-top: 70%;
+  bottom: 65px;
+}
+html .mainWrap .gameType .content .gameBlock .contentBox .gnameBox {
+  width: 110%;
+  height: 0;
+  padding-top: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+}
+html .mainWrap .gameType .content .gameBlock .contentBox .gnameBox p {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html .mainWrap .gameType .content .gameBlock .contentBox:hover .mainObj, html .mainWrap .gameType .content .gameBlock .contentBox:active .mainObj, html .mainWrap .gameType .content .gameBlock .contentBox.active .mainObj {
+  -webkit-animation: HOV 1s 0.3s ease-in-out;
+          animation: HOV 1s 0.3s ease-in-out;
+}
+@-webkit-keyframes HOV {
+  0% {
+    -webkit-transform: skew(0deg, 0deg) translate(-50%);
+            transform: skew(0deg, 0deg) translate(-50%);
+  }
+  100% {
+    -webkit-transform: skew(3deg, 2deg) translate(-50%);
+            transform: skew(3deg, 2deg) translate(-50%);
+  }
+}
+@keyframes HOV {
+  0% {
+    -webkit-transform: skew(0deg, 0deg) translate(-50%);
+            transform: skew(0deg, 0deg) translate(-50%);
+  }
+  100% {
+    -webkit-transform: skew(3deg, 2deg) translate(-50%);
+            transform: skew(3deg, 2deg) translate(-50%);
+  }
+}
+html .mainWrap .gameType .content .gameBlock .contentBox:hover .gnameBox, html .mainWrap .gameType .content .gameBlock .contentBox:active .gnameBox, html .mainWrap .gameType .content .gameBlock .contentBox.active .gnameBox {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+html .mainWrap .gameType .content .gameBlock:nth-of-type(2) .contentBox, html .mainWrap .gameType .content .gameBlock:nth-of-type(4) .contentBox, html .mainWrap .gameType .content .gameBlock:nth-of-type(5) .contentBox, html .mainWrap .gameType .content .gameBlock:nth-of-type(7) .contentBox {
+  background: -webkit-gradient(linear, left bottom, left top, from(#96124d), to(#ff5e88));
+  background: linear-gradient(to top, #96124d 0%, #ff5e88 100%);
+}
+html .mainWrap .gameType .content .gameBlock:nth-of-type(2) .contentBox:hover, html .mainWrap .gameType .content .gameBlock:nth-of-type(2) .contentBox:active, html .mainWrap .gameType .content .gameBlock:nth-of-type(2) .contentBox.active, html .mainWrap .gameType .content .gameBlock:nth-of-type(4) .contentBox:hover, html .mainWrap .gameType .content .gameBlock:nth-of-type(4) .contentBox:active, html .mainWrap .gameType .content .gameBlock:nth-of-type(4) .contentBox.active, html .mainWrap .gameType .content .gameBlock:nth-of-type(5) .contentBox:hover, html .mainWrap .gameType .content .gameBlock:nth-of-type(5) .contentBox:active, html .mainWrap .gameType .content .gameBlock:nth-of-type(5) .contentBox.active, html .mainWrap .gameType .content .gameBlock:nth-of-type(7) .contentBox:hover, html .mainWrap .gameType .content .gameBlock:nth-of-type(7) .contentBox:active, html .mainWrap .gameType .content .gameBlock:nth-of-type(7) .contentBox.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#96124d), to(#ff5e88));
+  background: linear-gradient(to bottom, #96124d 0%, #ff5e88 100%);
+}
+html .mainWrap .gameType .content .gameBlock:nth-of-type(even) {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+html footer {
+  width: 100%;
+  height: 205px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+html footer nav {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, right top, from(#ef534e), to(#d8231e));
+  background: linear-gradient(to right, #ef534e 0%, #d8231e 100%);
+}
+html footer nav ul {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+html footer nav ul li {
+  width: auto;
+  height: 100%;
+  margin: 0 8px;
+}
+html footer nav ul li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  background: transparent;
+  -webkit-transition: 3s all;
+  transition: 3s all;
+}
+html footer nav ul li a p {
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 0.5rem;
+  white-space: nowrap;
+}
+html footer nav ul li:hover a, html footer nav ul li:active a, html footer nav ul li.active a {
+  background-position-x: 100%;
+}
+html footer .bottom {
+  width: 100%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html footer .bottom p {
+  color: #a9a9a9;
+  font-size: 1rem;
+  line-height: 3rem;
+  text-align: center;
+}

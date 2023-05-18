@@ -1,0 +1,69 @@
+footer {
+    width: 100%;
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    nav {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $fnav_bg;
+
+        ul {
+            width: 100%;
+            max-width: 1400px;
+            height: 100%;
+            display: flex;
+            justify-content: left;
+
+            li {
+                width: auto;
+                height: 100%;
+                margin: 0 8px;
+               
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    background: transparent;
+                    transition: 3s all;
+
+                    p {
+                        color: $mainFont;
+                        font-size: 1.1rem;
+                        font-weight: bold;
+                        margin: 0 0.5rem;
+                        white-space: nowrap;
+                    }
+                }
+
+                &:hover,&:active,&.active {
+                    a {
+                        background-position-x: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+         p {
+            color: $footerFont;
+            font-size: 1rem;
+            line-height: 3rem;
+            text-align: center;
+         }
+    }
+}
